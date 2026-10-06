@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Contato · Pousada Essenza</title>
+<meta content="Fale com a Pousada Essenza pelo WhatsApp, e-mail ou formulário. Mapa e políticas de hospedagem." name="description"/>
+<link href="assets/fonts/inter.css" rel="stylesheet"/>
+<link href="assets/fonts/playfair.css" rel="stylesheet"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script src="assets/js/vendor/gsap.min.js"></script>
+<script src="assets/js/vendor/ScrollTrigger.min.js"></script>
+<script src="assets/js/vendor/lenis.min.js"></script>
+<script src="assets/js/vendor/lucide.min.js"></script>
+</head>
+<body>
+<div class="loader" id="loader"><div class="mk">ESSENZA</div></div>
+<div class="toast" id="toast"><i></i><span id="toastTxt">Enviado</span></div>
+<div class="progress" id="progress"></div>
+<main>
+<header class="pbanner">
+  <img alt="" decoding="async" src="assets/img/beach-dusk.jpg"/>
+  <div class="ct"><span class="eyebrow">Contato</span><h1>Vamos planejar <em>sua estadia</em></h1></div>
+</header>
+<section class="sec alt" id="contato">
+  <div class="wrap">
+    <div class="contact">
+      <form id="contactForm">
+        <div class="fld under"><label for="cN">Nome</label><div class="ctl"><input id="cN" required/></div></div>
+        <div class="fld under"><label for="cE">E-mail</label><div class="ctl"><input id="cE" type="email" required/></div></div>
+        <div class="fld under"><label for="cT">Telefone</label><div class="ctl"><input id="cT" type="tel"/></div></div>
+        <div class="fld under"><label for="cD">Datas</label><div class="ctl"><input id="cD" placeholder="Entrada → saída"/></div></div>
+        <div class="fld under full"><label for="cM">Mensagem</label><div class="ctl"><textarea id="cM"></textarea></div></div>
+        <div class="full"><button class="btn btn-solid" type="submit">Enviar mensagem <span class="ar">→</span></button></div>
+      </form>
+      <div class="cinfo rv">
+        <div class="it"><span class="ico-pill"><i data-lucide="message-circle"></i></span><div><b>WhatsApp</b><a data-wa="Olá! Vim pelo site da Pousada Essenza.">[(00) 00000-0000]</a></div></div>
+        <div class="it"><span class="ico-pill"><i data-lucide="phone"></i></span><div><b>Telefone</b>[(00) 0000-0000]</div></div>
+        <div class="it"><span class="ico-pill"><i data-lucide="mail"></i></span><div><b>E-mail</b>[contato@pousada.com.br]</div></div>
+        <div class="facade"><img alt="Fachada" loading="lazy" src="assets/img/aerial-hero.jpg"/></div>
+      </div>
+    </div>
+    <div class="map rv" style="margin-top:3rem;min-height:340px"><iframe title="Mapa" loading="lazy" tabindex="-1" style="pointer-events:none" src="https://www.google.com/maps?q=Pousada+Essenza+Itanha%C3%A9m+SP&output=embed"></iframe></div>
+  </div>
+</section>
+<section class="sec" id="politicas">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow rv">Políticas</span><h2 class="disp wipe">Tudo o que você <em>precisa saber</em></h2></div>
+    <div class="pols">
+      <div class="amen rv"><div class="ic"><i data-lucide="clock"></i></div><h3>Check-in / Check-out</h3><p>Entrada a partir das 14h · saída até 12h</p></div>
+      <div class="amen rv"><div class="ic"><i data-lucide="paw-print"></i></div><h3>Pets</h3><p>[Política para pets]</p></div>
+      <div class="amen rv"><div class="ic"><i data-lucide="calendar-days"></i></div><h3>Cancelamento</h3><p>[Regras de cancelamento]</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+import{j as r}from"./main-BdAyoSDY.js";import{R as s}from"./ResetPasswordForm-OpiUFCKE.js";import"./modulepreload-polyfill-B5Qt9EMX.js";import"./form-tgdB1pWe.js";const a=()=>r.jsx(s,{});export{a as default};

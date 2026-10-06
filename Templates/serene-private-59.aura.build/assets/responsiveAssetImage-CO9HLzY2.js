@@ -1,0 +1,6 @@
+import{d8 as c}from"./main-BdAyoSDY.js";/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const u=c("ArrowDownToLine",[["path",{d:"M12 17V3",key:"1cwfxf"}],["path",{d:"m6 11 6 6 6-6",key:"12ii2o"}],["path",{d:"M19 21H5",key:"150jfl"}]]),d="(min-width: 1280px) 20vw, (min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw",l="(min-width: 1024px) calc(100vw - 376px), 100vw",t=i=>i,o=(i,r)=>{for(const e of i)if(e)return r(e);return""},v=(i,r=t)=>o([i.video_poster_url,i.image_320w,i.image_800w,i.image_1600w,i.image_3840w,i.image_url,i.image_original],r),S=(i,r)=>{const e=r.transformUrl||t,g=[[i.image_320w,320],[i.image_800w,800],[i.image_1600w,1600]],w=new Set,m=g.flatMap(([a,_])=>{if(!a)return[];const n=e(a);return!n||w.has(n)?[]:(w.add(n),[`${n} ${_}w`])}).join(", ");return{src:r.layout==="detail"?o([i.image_1600w,i.image_800w,i.image_320w,i.image_3840w,i.image_url,i.image_original],e):o([i.image_800w,i.image_320w,i.image_1600w,i.image_3840w,i.image_url,i.image_original],e),srcSet:m||void 0,sizes:m.length>0?r.layout==="detail"?l:d:void 0}};export{u as A,S as a,v as g};
