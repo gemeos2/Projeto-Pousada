@@ -180,12 +180,14 @@
             transition: transform .3s
         }
 
-        .loader .mk::before {
-            content: "";
+        .loader .hammock {
             position: absolute;
-            inset: -40px -60px;
-            background: radial-gradient(closest-side, rgba(63, 174, 159, .35), transparent);
-            animation: breathe 2.4s ease-in-out infinite
+            bottom: 100%;
+            left: 50%;
+            width: 80px;
+            height: auto;
+            margin: 0 0 12px -40px;
+            pointer-events: none
         }
 
         /* scroll progress + cursor glow + chapter rail */

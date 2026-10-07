@@ -109,8 +109,10 @@
   const imgs = [...document.images].slice(0, 6); let n = 0;
   const bump = () => { n++; loader.style.setProperty('--lp', Math.min(1, n / Math.max(1, imgs.length))); };
   imgs.forEach(i => i.complete ? bump() : (i.addEventListener('load', bump), i.addEventListener('error', bump)));
-  function fin() { if (started) return; started = true; setTimeout(() => { loader.classList.add('done'); start(); }, 150); }
-  addEventListener('load', fin); setTimeout(fin, 2800);
+  const lv = loader.querySelector('video'); if (lv) lv.playbackRate = 1.8;
+  const MIN_MS = 2000;
+  function fin() { if (started) return; started = true; setTimeout(() => { loader.classList.add('done'); start(); }, Math.max(150, MIN_MS - performance.now())); }
+  addEventListener('load', fin); setTimeout(fin, 4000);
 
   /* ───────── WEBGL · cáusticas ───────── */
 function makeCaustics(canvas) {
